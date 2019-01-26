@@ -71,7 +71,6 @@ initializing it:
 >>> reader = hiredis.Reader(encoding="utf-8", errors="strict")
 >>> reader.feed("$3\r\n\xe2\x98\x83\r\n")
 >>> reader.gets()
-u'☃'
 ```
 
 Decoding of bulk data will be attempted using the specified encoding and
